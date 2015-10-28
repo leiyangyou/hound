@@ -7,7 +7,7 @@ os:
 
 env:
   # - WEBDRIVER=selenium
-  # - WEBDRIVER=phantomjs
+  - WEBDRIVER=phantomjs
   - WEBDRIVER=chrome_driver
 
 before_script:
