@@ -22,13 +22,13 @@ defmodule Hound.Session do
   def create_session(browser_name) do
     params = %{
       desiredCapabilities: %{
-        javascriptEnabled: false,
+        javascriptEnabled: true,
         version: "",
-        rotatable: false,
+        rotatable: true,
         takesScreenshot: true,
         cssSelectorsEnabled: true,
         browserName: browser_name,
-        nativeEvents: false,
+        nativeEvents: true,
         platform: "ANY"
       }
     }
