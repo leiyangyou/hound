@@ -11,4 +11,9 @@ elif [ "$WEBDRIVER" = "selenium" ]; then
   nohup java -jar selenium-server-standalone-2.45.0.jar &
   echo "Running with Selenium..."
   sleep 10
+elif [ "$WEBDRIVER" = "chrome_driver" ]; then
+  unzip http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip
+  nohup ./chromedriver &
+  echo "Running with Chrome Driver"
+  sleep 5
 fi
