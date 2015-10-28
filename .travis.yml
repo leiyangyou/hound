@@ -6,7 +6,7 @@ os:
   - linux
 
 env:
-  # - WEBDRIVER=selenium
+  - WEBDRIVER=selenium
   - WEBDRIVER=phantomjs
   - WEBDRIVER=chrome_driver
 
